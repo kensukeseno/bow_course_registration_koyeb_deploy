@@ -28,7 +28,7 @@ app.use(cookieParser());
 const PORT = process.env.PORT || 5050;
 
 // Serve React static files
-app.use(express.static(path.join(__dirname, "./frontend/build")));
+app.use(express.static("./frontend/build"));
 
 //connect to MongoDB
 mongoose

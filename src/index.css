@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --system-purple: #6a4cd7;
+  --system-navy: #031a62;
+  --system-blue: #00a3ff;
+  --system-red: #ff003a;
+  --system-orange: #ff8700;
+  --system-gray: #878d96;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.bg-1 {
+  background-color: var(--system-purple);
+}
+.bg-2 {
+  background-color: var(--system-navy);
+}
+.bg-3 {
+  background-color: var(--system-blue);
+}
+.bg-4 {
+  background-color: var(--system-red);
+}
+.bg-5 {
+  background-color: var(--system-orange);
+}
+
+.btn-primary-fill {
+  @apply rounded-md text-white;
+  background-image: linear-gradient(
+    90deg,
+    var(--system-purple),
+    var(--system-blue)
+  );
+}
+.btn-primary-fill:hover {
+  background-image: linear-gradient(
+    90deg,
+    var(--system-orange),
+    var(--system-orange)
+  );
+}
+
+.btn-primary-outlined {
+  @apply rounded-md;
+  background-image: linear-gradient(
+    156deg,
+    var(--system-purple),
+    var(--system-blue)
+  );
+}
+.btn-primary-outlined p {
+  @apply bg-white m-[1px] rounded-md;
+}
+.btn-primary-outlined p:hover {
+  @apply text-[var(--system-blue)];
+}
+
+.btn-secondary {
+  @apply bg-[#6a4cd70d] rounded-md;
+}
+.btn-secondary:hover {
+  @apply text-[var(--system-orange)];
+}
+
+.btn-delete {
+  @apply bg-[#ff446f] text-white rounded-md;
+}
+.btn-delete:hover {
+  @apply bg-[var(--system-red)];
+}
